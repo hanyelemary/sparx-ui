@@ -1,0 +1,168 @@
+.sparx-form input[type="text"],
+.sparx-form input[type="password"],
+.sparx-form input[type="email"],
+.sparx-form input[type="url"],
+.sparx-form input[type="date"],
+.sparx-form input[type="month"],
+.sparx-form input[type="time"],
+.sparx-form input[type="datetime"],
+.sparx-form input[type="datetime-local"],
+.sparx-form input[type="week"],
+.sparx-form input[type="number"],
+.sparx-form input[type="search"],
+.sparx-form input[type="tel"],
+.sparx-form input[type="color"],
+.sparx-form select,
+.sparx-form textarea {
+    height: 40px;
+    padding: 0.22em;
+    font-weight: 200;
+    vertical-align: middle;
+    display: inline-block;
+    background-color: #F9F9F9;
+    border: none;
+    border-radius: 0;
+    box-shadow: 0 1px 1px #CFCFCF;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.sparx-form input[type="text"]:focus,
+.sparx-form input[type="password"]:focus,
+.sparx-form input[type="email"]:focus,
+.sparx-form input[type="url"]:focus,
+.sparx-form input[type="date"]:focus,
+.sparx-form input[type="month"]:focus,
+.sparx-form input[type="time"]:focus,
+.sparx-form input[type="datetime"]:focus,
+.sparx-form input[type="datetime-local"]:focus,
+.sparx-form input[type="week"]:focus,
+.sparx-form input[type="number"]:focus,
+.sparx-form input[type="search"]:focus,
+.sparx-form input[type="tel"]:focus,
+.sparx-form input[type="color"]:focus,
+.sparx-form select:focus,
+.sparx-form textarea:focus {
+	outline: 0;
+    background: #FFF;
+}
+
+.sparx-form label {
+    cursor: pointer;
+}
+
+.sparx-form fieldset {
+    margin: 0;
+    padding: 0.35em 0 0.75em;
+    border: 0;
+}
+
+.sparx-form legend {
+    display: block;
+    width: 100%;
+    padding: 0.3em 0;
+    margin-bottom: 0.3em;
+    border-bottom: 1px solid #CFCFCF;
+}
+
+.sparx-form .sparx-group input {
+    display: block;
+    padding: 10px;
+    margin: 0;
+    border-bottom: 1px solid #CFCFCF;
+}
+
+.sparx-form-panel .sparx-form-row {
+    border-bottom: 1px solid #CCC;
+    width: 100%;
+    float: left;
+}
+
+.sparx-form-panel {
+    border: 1px solid #DDD;    
+}
+
+.sparx-form-panel .sparx-form-label {
+    background: #DEDEDE;
+    width: 20%;
+    float: left;
+    padding: 11px 1%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; 
+    height: 40px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.sparx-form-panel .sparx-form-control {
+    width: 80%;
+    float: left;
+}
+
+/* multi settings box */
+.sparx-form .sparx-multi-settings-box .sparx-expand {
+    font-size: 1.125em;
+    color: #CCC;
+    margin-left: -30px;
+}
+
+.sparx-form .sparx-multi-settings-box .sparx-expand:hover {
+    color: #545454;
+}
+
+.sparx-form .sparx-multi-settings {
+    overflow: hidden;
+    height:0;
+    margin-top: 10px;
+    position: relative;
+}
+
+.sparx-state-toggle {
+    display: none;
+}
+
+.sparx-state-toggle:checked + .sparx-multi-settings {
+    height: 100%;
+}
+
+.sparx-form .sparx-multi-settings-overlay {
+    display: none;
+    position: absolute;
+    margin-top: 1px;
+    background: #F9F9F9;
+    padding: 1em;
+    box-shadow: 0 3px 3px #CFCFCF;
+    width: 300px;
+}
+
+.sparx-form .sparx-multi-settings-overlay input {
+    display: block;
+    margin-bottom: 20px;
+    width: 100%;
+    background: #EEE;
+}
+
+.sparx-overlay-controls {
+    float: right;
+    margin-top: -5px;
+}
+
+.sparx-state-toggle:checked + .sparx-multi-settings-overlay {
+    display: block;
+}
+
+.sparx-check {
+    color: #AAA;
+}
+
+.sparx-check:hover {
+    color: #545454;
+}
+
+.sparx-state-toggle:checked + .sparx-check {
+    color: #3f8c6e;
+    font-weight: bold;
+}

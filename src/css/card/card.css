@@ -1,0 +1,59 @@
+.sparx-card {
+	background-color: #FFF;	
+	margin: 0 auto;    
+    box-shadow: 0 1px 1px #CFCFCF;        
+    margin-bottom: 20px;
+    position: relative;
+}
+
+/* img-crop */
+
+.sparx-card-media,
+.sparx-card-media img {
+	width: 100%;
+}
+
+.sparx-card-media {
+	background-color: #ededed; /* some background color for short images */
+	overflow: hidden;
+	letter-spacing: -0.31em; /* remove white-space for inline-block elements */
+	word-spacing: -0.43em; /* IE < 8 && gecko */
+}
+
+.sparx-card-media:before {
+	/* vertically center the image */
+	display: inline-block;
+	vertical-align: middle;
+	/* pseudo element to vertically align image to */
+	content: "";	
+	/* Set this to your desired height(to width) ratio */
+	padding-top: 50%; /* % of original image width */ 
+}
+
+.sparx-card-media img { 	
+	max-width: 100%;
+	/* vertically center the media */
+	display: inline-block;
+	vertical-align: middle;
+	/* removes(sorta) image from the flow */
+	padding-left: 100%;
+	margin: -999em -100%;	
+}
+
+.sparx-card-header {	
+	color: #027eba;	
+	font-weight: 200;
+	font-size: 1.25em;
+}
+
+.sparx-card-footer {
+	font-size: 0.75em;
+	text-transform: uppercase;
+}
+
+.sparx-card-content {	
+	/*padding: 15px 0;	*/
+	padding: 1em;
+	font-size: 0.8125em;
+	color: #777;
+}

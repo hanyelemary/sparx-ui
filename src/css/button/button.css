@@ -1,0 +1,84 @@
+.sparx-button {
+    height: 40px;
+    display: inline-block;
+    zoom: 1;
+    white-space: nowrap;
+    text-transform: uppercase;
+    vertical-align: top;
+    text-align: center;
+    font-size: 0.75em;  
+    padding: 1em;
+    color: #444;
+    border: none;
+    border-radius: 0;
+    background: #EEE;
+    box-shadow: 0 1px 1px #CCC;
+    text-decoration: none;
+    font-weight: bold;
+    outline: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    /* prevents webkit from flashing once button is clicked */
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}   
+
+.sparx-button:hover {
+    background: #f8f8f8;    
+}
+
+.sparx-button:active {
+    box-shadow: none;
+    position: relative;
+    top: 2px;
+}
+
+.sparx-button .sparx-icon {
+    font-size: 1.5em;
+}
+
+.sparx-button-primary,
+.sparx-button-dark,
+.sparx-button-action {
+    color: #FFF;
+}
+
+.sparx-button-primary {
+    background: #3f8c6e;       
+}
+
+.sparx-button-primary:hover {
+    background: #8ec377;
+}
+
+.sparx-button-dark {
+    background: #25586f;
+}
+
+.sparx-button-dark:hover {
+    background: #11a8ab;
+}
+
+.sparx-button-action {
+    background: #017eba;
+}
+
+.sparx-button-action:hover {
+    background: #00a1cb;
+}
+
+/* button group */
+.sparx-button-group {
+    white-space: nowrap;
+    margin-bottom: 20px;
+}
+
+.sparx-button-group .sparx-button {
+    padding: 0 1.5em 0 1.5em;
+}
+
+.sparx-button-group .sparx-button:not(:first-child) {
+    margin-left: -5px;
+}

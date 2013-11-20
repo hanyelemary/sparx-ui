@@ -1,0 +1,122 @@
+.sparx-callout {
+	display: inline-block;
+	width: 100%;
+	margin-bottom: 2px;	
+}
+
+.sparx-callout p {
+	margin: 5px 0;
+}
+
+.sparx-avatar {
+	border: 3px solid #F7F7F7;
+}
+
+.sparx-callout-left,
+.sparx-avatar-left {
+	float: left;	
+}
+
+.sparx-callout-right,
+.sparx-avatar-right {
+	float: right;	
+}
+
+.sparx-callout .sparx-avatar-left, 
+.sparx-callout .sparx-avatar-right {
+	width: 20%;
+	max-width: 80px;
+}
+
+.sparx-callout-left, 
+.sparx-callout-right {
+	font-size: 0.875em;
+	position: relative;
+	background-color: #FFF;
+    border: none;
+    border-color: #CFCFCF;
+    border-bottom-style: inset;
+    padding: 0.25em 1em; 
+    margin-left: 1.5%;   
+    margin-right: 1.5%; 
+    max-width: 65%;  
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.sparx-callout-left:after, 
+.sparx-callout-right:after {	
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-width: 10px;
+	top: 50%;
+	margin-top: -10px;
+}
+
+.sparx-callout-left:after {
+	right: 100%;
+	border-right-color: #FFF;	
+}
+
+.sparx-callout-right:after {
+	left: 100%;
+	border-left-color: #FFF;	
+}
+
+.sparx-callout-left.primary,
+.sparx-callout-right.primary {
+	background-color: #51c4d4;
+	color: #FFF;
+}
+
+.sparx-callout-right.primary:after {
+	border-left-color: #51c4d4;
+}
+
+.sparx-callout-left.primary:after {
+	border-right-color: #51c4d4;	
+}
+
+.sparx-callout-header {
+	color: #AAAAAA;
+}
+
+
+/* profile boxes */
+.sparx-profile {
+	background: #FFF;
+	margin: 0 auto;    
+    box-shadow: 0 1px 1px #CFCFCF;    
+    width: 320px;    
+    margin-bottom: 20px;
+}
+
+.sparx-profile .sparx-profile-cover {
+	height: 120px;
+}
+
+.sparx-profile .sparx-profile-cover img {
+	max-width: 100%;
+}
+
+.sparx-profile .sparx-avatar {
+	max-width: 80px;
+}
+
+.sparx-profile .sparx-profile-content {
+	text-align: center;
+}
+
+.sparx-profile-content p {
+	margin: 5px 0;
+}
+
+.sparx-profile-content .sparx-profile-title,
+.sparx-profile-content .sparx-profile-description {
+	font-size: 0.8125em;
+}

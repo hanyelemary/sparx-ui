@@ -1,0 +1,14 @@
+{
+	"adjoining-classes": 			false,
+	"box-model": 					false,
+	"compatible-vendor-prefixes": 	false,
+	"duplicate-background-images": 	false,
+	"import": 						false,
+	"important": 					false,
+	"overqualified-elements": 		false,
+	"outline-none":					false,
+	"text-indent": 					false,
+	"box-sizing"               : 	false,
+    "display-property-grouping": 	false,
+    "star-property-hack"       : 	false
+}

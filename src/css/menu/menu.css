@@ -1,0 +1,101 @@
+/* Base Menu */
+.sparx-menu,
+.sparx-menu-shelf {
+	list-style: none;
+	padding: 0;
+	display: inline-block;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+.sparx-menu > li {
+	float: left;
+	margin-left: -1px;	
+}
+.sparx-menu-shelf > li > a,
+.sparx-menu > li > a {
+	overflow: hidden;
+	padding: 1em;
+	color: #444;
+	background: #EEE;
+}
+
+.sparx-menu-shelf > li > a:hover,
+.sparx-menu-shelf > li.active > a,
+.sparx-menu > li > a:hover,
+.sparx-menu > li.active > a {
+	background: #f8f8f8;
+}
+
+/* Color Variations of Menu*/
+
+.sparx-menu-shelf.sparx-menu-action,
+.sparx-menu-action > li > a {
+    background: #017eba;    
+}
+
+.sparx-menu-action > li.active > a,
+.sparx-menu-action > li > a:hover {
+	background: #00a1cb;
+	overflow: hidden;	
+}
+
+.sparx-menu-shelf.sparx-menu-primary,
+.sparx-menu-primary > li > a {
+    background: #3f8c6e;       
+}
+
+.sparx-menu-primary > li > a:hover,
+.sparx-menu-primary > li.active > a {
+    background: #8ec377;
+}
+
+.sparx-menu-shelf.sparx-menu-dark,
+.sparx-menu-dark > li > a {
+    background: #25586f;
+}
+
+.sparx-menu-dark > li > a:hover,
+.sparx-menu-dark > li.active > a {
+    background: #11a8ab;
+}
+
+.sparx-menu-action > li > a,
+.sparx-menu-primary > li > a,
+.sparx-menu-dark > li > a {
+	color: #FFF;
+}
+
+/* Menu Shelf */
+.sparx-menu-shelf {
+	left: 0;
+	top: 0;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	height: 100%;
+	width: 75px;
+	font-size: 0.625em;	
+	text-transform: uppercase;
+	text-align: center;
+	color: #444;
+	background: #EEE;	
+}
+
+.sparx-menu-shelf > li {
+	float: none;
+	margin: 0;
+}
+
+.sparx-menu-shelf > li > a {
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    padding: 15px 0;    
+}
+
+.sparx-menu-shelf > li .sparx-icon {
+	display: block;
+	font-size: 3em;
+}
