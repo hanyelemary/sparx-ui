@@ -1,0 +1,42 @@
+body {
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif,league-gothic,trebuchet ms;
+	background-color: #E7E7E7;
+	color: #666;
+}
+
+body * {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+a,
+a:hover,
+a:visited {
+	color: #25586f;
+	text-decoration: none;
+}
+
+.banner {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+	height: 50px;
+	display: inline-block;
+	width: 100%;
+	overflow: hidden;
+	background: #017eba;
+	color: #FFF;
+}
+
+.logo {
+	float: left;
+	font-size: 2em;
+	font-weight: 200;
+	padding-left: 10px;
+	padding-top: 2px;
+}
+
+.container {
+	width: 90%;
+	margin: 0 auto;
+}

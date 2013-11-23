@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    <meta name="author" content=""/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    
+    <!-- normalize -->
+    <link rel="stylesheet" href="../../assets/css/normalize.css"/>
+
+    <!-- font awesome -->
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" rel="stylesheet">
+
+	<!-- Sparx Stylesheets -->	
+	<link rel="stylesheet" href="../../src/css/form/form.css"/>
+	<link rel="stylesheet" href="../../src/css/button/button.css"/>
+	<link rel="stylesheet" href="../../src/css/menu/menu.css"/>
+    <link rel="stylesheet" href="../../src/css/typography.css"/>
+    <link rel="stylesheet" href="../../src/css/misc.css"/>	
+	<link rel="stylesheet" href="../../src/css/card/card.css"/>
+
+	<!-- Kitchen Sink Stylesheet -->
+	<link rel="stylesheet" href="kitchensink.css"/>
+
+	<!--[if lt IE 9]>
+    	<script src="javascript/html5shiv.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+	<header class="banner">		
+		<div class="logo">Spar<i class="fa fa-xing-square"></i></div>
+		<nav style="float: right;">
+			<ul class="sparx-menu sparx-menu-action">
+				<li class="active">
+					<a href="#forms"><i class="fa fa-home"></i> Home</a>
+				</li>
+				<li><a href="#forms">Forms</a></li>
+				<li><a href="#cards">Cards</a></li>
+				<li><a href="#typography">Typography</a></li>
+			</ul>
+		</nav>
+	</header>
+	<section class="container">
+		<h1 id="forms">Forms</h1>
+		<h2>Form Inputs</h2>
+		<form class="sparx-form">
+			<input style="width:70%;" type="search" results="5" placeholder="Search..." />
+			<input type="button" style="width:10%; min-width: 80px;" class="sparx-button sparx-button-action" value="Search"/>
+						
+			<div style="padding-top:10px;"></div>
+			<button class="sparx-button sparx-button-dark"><i class="sparx-icon fa fa-save"></i> Save</button>
+			<input type="button" class="sparx-button" value="Cancel"/>			
+
+			<h2>Expandable Form Inputs</h2>
+
+			<h3>Reveal Input Options</h3>
+			<div class="sparx-multi-settings-box">
+				<input style="width:90%;" type="search" results="5" placeholder="Search..." />
+				<label for="expand" class="sparx-expand">
+					<i class="fa fa-toggle-down"></i>
+				</label>
+				<input type="checkbox" id="expand" class="sparx-state-toggle"/>
+				<div class="sparx-multi-settings">
+				    <a href="#" class="sparx-text-small">
+				    	<i class="fa fa-gears"></i> Advanced Options
+				    </a>
+				    | 
+				    <a href="#" class="sparx-text-small">Browse Search</a>
+				</div>
+			</div>	
+
+			<h3>Overlay Input Options</h3>
+			<div class="sparx-multi-settings-box">
+				<input style="width:90%;" type="search" results="5" placeholder="Search..." />
+				<label for="overlay" class="sparx-expand">
+					<i class="fa fa-toggle-down"></i>
+				</label>
+				<input type="checkbox" id="overlay" class="sparx-state-toggle"/>
+				<div class="sparx-multi-settings-overlay">
+					<div class="sparx-overlay-controls">
+						<label for="overlay"><i class="fa fa-times"></i></label>
+					</div>
+					<label for="date">Date:</label>
+				    <input id="date" type="date"/>
+
+				    <label for="week">Week:</label>
+				    <input id="week" type="week"/>
+
+			    	<label for="color">Color:</label>
+				    <input id="color" type="color"/>
+
+				    <button class="sparx-button">Search</button>
+				</div>
+			</div>		
+
+			<h2>Form Group</h2>
+
+			<fieldset class="sparx-group">
+				<!-- <legend>Log in</legend> -->
+				<input style="width:100%;" type="text" placeholder="Username"/>
+				<input style="width:100%;" type="password" placeholder="Password"/>
+			</fieldset>
+			<input id="remember" class="sparx-state-toggle" type="checkbox"/><label for="remember" class="sparx-check"><i class="fa fa-check"></i> Remember me</label>
+			
+			<div style="padding-top:10px;"></div>			
+			<input style="width:100%;" type="button" class="sparx-button sparx-button-dark" value="Log in"/>	
+
+			<h2>Button Group</h2>
+			<div class="sparx-button-group">
+				<button class="sparx-button"><i class="sparx-icon fa fa-edit"></i></button>
+				<button class="sparx-button"><i class="sparx-icon fa fa-envelope"></i></button>
+				<button class="sparx-button"><i class="sparx-icon fa fa-wrench"></i></button>
+			</div>
+
+			<div class="sparx-button-group">
+				<button class="sparx-button sparx-button-action"><i class="sparx-icon fa fa-align-left"></i></button>
+				<button class="sparx-button sparx-button-action"><i class="sparx-icon fa fa-align-justify"></i></button>
+				<button class="sparx-button sparx-button-action"><i class="sparx-icon fa fa-align-right"></i></button>
+			</div>
+
+		</form>	
+
+		<h2>Form Panel</h2>
+
+		<form class="sparx-form sparx-form-panel">
+			<div class="sparx-form-row">
+				<div class="sparx-form-label">
+				<label for="name">Name:</label>
+				</div>
+				<div class="sparx-form-control">
+					<input style="width:100%;" id="name" type="text" placeholder="Hany Elemary"/>
+				</div>
+			</div>
+				<div class="sparx-form-row">				
+				<div class="sparx-form-label">
+					<label for="email">Email:</label>
+				</div>
+				<div class="sparx-form-control">
+					<input style="width:100%;" id="email" type="email" placeholder="example@me.com"/>
+				</div>
+			</div>
+			<div class="sparx-form-row">
+				<div class="sparx-form-label">
+					<label for="url">Url:</label>
+				</div>
+				<div class="sparx-form-control">
+					<input style="width:100%;" id="url" type="url" placeholder="http://www.hanyelemary.com"/>
+				</div>
+			</div>
+			
+			<input style="width:100%;" type="button" class="sparx-button sparx-button-primary" value="Register"/>
+		</form>
+		
+		<div style="padding-top:10px;"></div>
+
+		<div style="padding-top:10px;"></div>
+
+		<h1 id="cards">Cards</h1>
+			
+		<h2>Profile Card</h2>
+		<div class="sparx-profile">
+			<!-- cover image -->
+			<div class="sparx-profile-cover">
+				<img src="../../assets/images/cover-photo.jpg"/>
+			</div>			
+			<!-- profile content -->
+			<div class="sparx-profile-content">
+				<header>
+					<img class="sparx-avatar" src="../../assets/images/profile_pic.jpg"/>
+					<p class="sparx-profile-name">Hany Elemary</p>
+					<p class="sparx-profile-title sparx-muted">Sr. Software Engineer at OCLC</p>
+				</header>
+				<div>
+					<p class="sparx-profile-description">web development . design . mobile . music . coffee</p>
+				</div>
+
+				<button style="width:100%;" class="sparx-button sparx-button-primary">Follow</button>
+
+				<!-- profile main action (follow) -->
+			</div>			
+				
+			<!-- profile footer -->
+				<!-- profile options -->
+			
+		</div>
+
+		<h2>Media Cards</h2>
+		<section class="sparx-card">
+			<div class="sparx-card-media">
+				<img src="../../assets/images/cover-photo-train.jpg"/>
+			</div>						
+			<div class="sparx-card-content">
+				<header class="sparx-card-header">Introducing sparx Cards</header>
+				<p>Check out this media. Adding new content here is necessary. Content is king!</p>
+				<footer class="sparx-card-footer sparx-muted">The Windy City, Chicago - 2013.</footer>
+			</div>			
+		</section>
+
+		<section class="sparx-card">
+			<div class="sparx-card-media">
+				<img src="../../assets/images/cover-photo-paris.jpg"/>
+			</div>						
+			<div class="sparx-card-content">
+				<header class="sparx-card-header">Introducing sparx Cards</header>
+				<p>Check out this media. Adding new content here is necessary. Content is king!</p>
+				<footer class="sparx-card-footer sparx-muted">Paris, France - 2012.</footer>
+			</div>			
+		</section>
+
+		<section class="sparx-card">
+			<div class="sparx-card-media">
+				<img src="../../assets/images/cover-photo-miami.jpg"/>
+			</div>						
+			<div class="sparx-card-content">
+				<header class="sparx-card-header">Introducing sparx Cards</header>
+				<p>Check out this media. Adding new content here is necessary. Content is king!</p>
+				<footer class="sparx-card-footer sparx-muted">Miami, 2013</footer>
+			</div>			
+		</section>
+
+
+		<h2>Callouts</h2>
+
+		<div class="sparx-callout">
+			<img class="sparx-avatar sparx-avatar-left" src="../../assets/images/profile_pic.jpg"/>
+			<div class="sparx-callout-left">
+				<header class="sparx-callout-header">Hany Elemary</header>
+				<p>What's up fool! wanna do dinner later on tonight? I know a pretty good spot.</p>
+			</div>
+		</div>
+		
+		<div class="sparx-callout">
+			<img class="sparx-avatar sparx-avatar-right" src="../../assets/images/profile_pic_becky.jpg"/>
+			<div class="sparx-callout-right primary">
+				<p>Sure, what time are you thinking?</p>
+			</div>
+		</div>
+
+		<div class="sparx-callout">
+			<img class="sparx-avatar sparx-avatar-left" src="../../assets/images/profile_pic.jpg"/>
+			<div class="sparx-callout-left">
+				<header class="sparx-callout-header">Hany Elemary</header>
+				<p>7:30 okay? meet at your place?</p>
+			</div>
+		</div>		
+
+		<div class="sparx-callout">
+			<img class="sparx-avatar sparx-avatar-right" src="../../assets/images/profile_pic_becky.jpg"/>
+			<div class="sparx-callout-right primary">
+				<p>Perfect :) see you then.</p>
+			</div>
+		</div>
+
+		<h1>Menus & Shelves</h1>
+		<h2>Basic Menus</h2>		
+		<nav>
+			<ul class="sparx-menu">
+				<li class="active">
+					<a href="#forms"><i class="fa fa-home"></i> Home</a>
+				</li>
+				<li><a href="#forms">Forms</a></li>
+				<li><a href="#cards">Cards</a></li>
+				<li><a href="#typography">Typography</a></li>
+			</ul>
+		</nav>
+
+		<nav>
+			<ul class="sparx-menu sparx-menu-primary">
+				<li class="active">
+					<a href="#forms"><i class="fa fa-home"></i> Home</a>
+				</li>
+				<li><a href="#forms">Forms</a></li>
+				<li><a href="#cards">Cards</a></li>
+				<li><a href="#typography">Typography</a></li>
+			</ul>
+		</nav>
+
+		<nav>
+			<ul class="sparx-menu sparx-menu-dark">
+				<li class="active">
+					<a href="#forms"><i class="fa fa-home"></i> Home</a>
+				</li>
+				<li><a href="#forms">Forms</a></li>
+				<li><a href="#cards">Cards</a></li>
+				<li><a href="#typography">Typography</a></li>
+			</ul>
+		</nav>
+
+		<h2>Menu Shelves</h2>
+
+		<section class="sparx-card">
+			<nav>
+				<ul class="sparx-menu-shelf">
+					<li class="active">
+						<a href="#">
+							<i class="fa fa-home sparx-icon"></i> 
+							<span>Home</span>
+							<span class="sparx-badge"></span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="fa fa-envelope sparx-icon"></i> 
+							<span>Email</span>
+							<span class="sparx-badge"></span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="fa fa-download sparx-icon"></i> 
+							<span>Download</span>
+							<span class="sparx-badge sparx-icon"></span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="fa fa-cloud-upload sparx-icon"></i> 
+							<span>Upload</span>
+							<span class="sparx-badge"></span>
+						</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="sparx-card-content" style="margin-left: 6.5em; height: 280px; overflow-y: scroll; position: relative; display: inline-block; overflow: auto;">
+				<header class="sparx-card-header">This is the first heading</header>
+				<p>Here is some text that follows the first heading.</p>
+
+				<header class="sparx-card-header">This is the second heading</header>
+				<p>Here is some text that follows the first heading.</p>				
+
+				<header class="sparx-card-header">This is the third heading</header>
+				<p>Here is some text that follows the first heading.</p>
+
+				<header class="sparx-card-header">This is the fourth heading</header>
+				<p>Here is some text that follows the first heading.</p>
+
+				<footer class="sparx-card-footer sparx-muted">And finally, here is the footer.</footer>
+			</div>
+		</section>		
+		
+		<!-- <h1>Message Box (Google+ and Facebook)</h1> -->
+		
+		<h1 id="typography">h1.Typography</h1>
+		<h2>h2.Heading</h2>
+		<h3>h3.Heading</h3>
+		<h4>h4.Heading</h4>
+		<h5>h5.Heading</h5>
+		<h6>h6.Heading</h6>
+
+		<p class="sparx-muted sparx-text-tiny">
+			This is muted text. It's really not that important but it helps better define context.
+		</p>
+	</section>				
+</body>
+</html>
