@@ -1,7 +1,6 @@
 Contributing to SparxUI
 =======================
 ## Coding Standards and Guiding Principles
-------------------------------------------
 Our guiding principles are:
 
 * Accessibility
@@ -11,8 +10,7 @@ Our guiding principles are:
 Our CSS code follows the existing and well-known [SMACSS](http://smacss.com/) principles.
 
 ## Global Dependencies
-
-SparxUI is dependent on [node.js](http://nodejs.org/) and Grunt. Install nodejs and then open your terminal:
+SparxUI is dependent on [node.js](http://nodejs.org/) and [Grunt](http://gruntjs.com/). Install nodejs and then open your terminal:
 
 ```
 npm install -g grunt-cli
@@ -28,7 +26,6 @@ grunt
 ```
 
 ## Contributing
----------------
 Have you checked out our current issues? If not, we recommend you do so.
 
 * Fork the repo
