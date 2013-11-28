@@ -17,9 +17,10 @@
 	<link rel="stylesheet" href="../../src/css/form/form.css"/>
 	<link rel="stylesheet" href="../../src/css/button/button.css"/>
 	<link rel="stylesheet" href="../../src/css/menu/menu.css"/>
-    <link rel="stylesheet" href="../../src/css/typography.css"/>
-    <link rel="stylesheet" href="../../src/css/misc.css"/>	
 	<link rel="stylesheet" href="../../src/css/card/card.css"/>
+    <link rel="stylesheet" href="../../src/css/typography.css"/>
+    <link rel="stylesheet" href="../../src/css/misc.css"/>		
+	<link rel="stylesheet" href="../../src/css/utils.css"/>
 
 	<!-- Kitchen Sink Stylesheet -->
 	<link rel="stylesheet" href="kitchensink.css"/>
@@ -47,11 +48,12 @@
 		<h1 id="forms">Forms</h1>
 		<h2>Form Inputs</h2>
 		<form class="sparx-form">
+			
 			<input style="width:70%;" type="search" results="5" placeholder="Search..." />
 			<input type="button" style="width:10%; min-width: 80px;" class="sparx-button sparx-button-action" value="Search"/>
 						
 			<div style="padding-top:10px;"></div>
-			<button class="sparx-button sparx-button-dark"><i class="sparx-icon fa fa-save"></i> Save</button>
+			<button class="sparx-button sparx-button-dark"><i class="fa fa-save fa-lg"></i> Save</button>
 			<input type="button" class="sparx-button" value="Cancel"/>			
 
 			<h2>Expandable Form Inputs</h2>
@@ -110,15 +112,15 @@
 
 			<h2>Button Group</h2>
 			<div class="sparx-button-group">
-				<button class="sparx-button"><i class="sparx-icon fa fa-edit"></i></button>
-				<button class="sparx-button"><i class="sparx-icon fa fa-envelope"></i></button>
-				<button class="sparx-button"><i class="sparx-icon fa fa-wrench"></i></button>
+				<button class="sparx-button"><i class="fa fa-edit fa-lg"></i></button>
+				<button class="sparx-button"><i class="fa fa-envelope fa-lg"></i></button>
+				<button class="sparx-button"><i class="fa fa-wrench fa-lg"></i></button>
 			</div>
 
 			<div class="sparx-button-group">
-				<button class="sparx-button sparx-button-action"><i class="sparx-icon fa fa-align-left"></i></button>
-				<button class="sparx-button sparx-button-action"><i class="sparx-icon fa fa-align-justify"></i></button>
-				<button class="sparx-button sparx-button-action"><i class="sparx-icon fa fa-align-right"></i></button>
+				<button class="sparx-button sparx-button-action"><i class="fa fa-align-left fa-lg"></i></button>
+				<button class="sparx-button sparx-button-action"><i class="fa fa-align-justify fa-lg"></i></button>
+				<button class="sparx-button sparx-button-action"><i class="fa fa-align-right fa-lg"></i></button>
 			</div>
 
 		</form>	
@@ -296,29 +298,29 @@
 				<ul class="sparx-menu-shelf">
 					<li class="active">
 						<a href="#">
-							<i class="fa fa-home sparx-icon"></i> 
-							<span>Home</span>
+							<i class="fa fa-home fa-3x"></i> 
+							<span class="sparx-menu-text">Home</span>
 							<span class="sparx-badge"></span>
 						</a>
 					</li>
 					<li>
 						<a href="#">
-							<i class="fa fa-envelope sparx-icon"></i> 
-							<span>Email</span>
+							<i class="fa fa-envelope fa-3x"></i> 
+							<span class="sparx-menu-text">Email</span>
 							<span class="sparx-badge"></span>
 						</a>
 					</li>
 					<li>
 						<a href="#">
-							<i class="fa fa-download sparx-icon"></i> 
-							<span>Download</span>
-							<span class="sparx-badge sparx-icon"></span>
+							<i class="fa fa-download fa-3x"></i> 
+							<span class="sparx-menu-text">Download</span>
+							<span class="sparx-badge fa-3x"></span>
 						</a>
 					</li>
 					<li>
 						<a href="#">
-							<i class="fa fa-cloud-upload sparx-icon"></i> 
-							<span>Upload</span>
+							<i class="fa fa-cloud-upload fa-3x"></i> 
+							<span class="sparx-menu-text">Upload</span>
 							<span class="sparx-badge"></span>
 						</a>
 					</li>
@@ -339,7 +341,105 @@
 
 				<footer class="sparx-card-footer sparx-muted">And finally, here is the footer.</footer>
 			</div>
-		</section>		
+		</section>	
+
+		<h2>Pagination</h2>
+		
+		<nav role="navigation" aria-label="Pagination">
+			<ul class="sparx-pagination">				
+				<li class="sparx-disabled">
+					<a href="#">					
+						<i class="fa fa-backward fa-lg"></i> 
+						<span>Previous </span><span class="sparx-access">page</span>
+					</a>
+				</li>
+				<li class="active">
+					<a href="#"><span class="sparx-access">You're currently on page </span><span>1</span></a>
+				</li>
+				<li>
+					<a href="#" rel="next"><span class="sparx-access">page </span><span>2</span></a>
+				</li>
+				<li>
+					<a href="#"><span class="sparx-access">page </span><span>3</span></a>
+				</li>
+				<li>
+					<a href="#"><span class="sparx-access">page </span><span>4</span></a>
+				</li>
+				<li>
+					<a href="#"><span class="sparx-access">page </span><span>5</span></a>
+				</li>
+				<li>
+					<a href="#">						
+						<span>Next </span><span class="sparx-access">page</span>
+						<i class="fa fa-forward fa-lg"></i> 
+					</a>
+				</li>
+			</ul>
+		</nav>
+		
+		<nav role="navigation" aria-label="Pagination">
+			<ul class="sparx-pagination sparx-menu-primary">							
+				<li>
+					<a href="#">					
+						<i class="fa fa-backward fa-lg"></i> 
+						<span>Previous </span><span class="sparx-access">page</span>
+					</a>
+				</li>
+				<li>
+					<a href="#"><span class="sparx-access">page </span><span>1</span></a>
+				</li>
+				<li>
+					<a href="#" rel="prev"><span class="sparx-access">page </span><span>2</span></a>
+				</li>
+				<li class="active">
+					<a href="#"><span class="sparx-access">You're currently on page </span><span>3</span></a>
+				</li>
+				<li>
+					<a href="#" rel="next"><span class="sparx-access">page </span><span>4</span></a>
+				</li>
+				<li>
+					<a href="#"><span class="sparx-access">page </span><span>5</span></a>
+				</li>
+				<li>
+					<a href="#">						
+						<span>Next </span><span class="sparx-access">page</span>
+						<i class="fa fa-forward fa-lg"></i> 
+					</a>
+				</li>
+			</ul>
+		</nav>
+
+		<nav role="navigation" aria-label="Pagination">
+			<ul class="sparx-pagination sparx-menu-dark">				
+				<li>
+					<a href="#">					
+						<i class="fa fa-backward fa-lg"></i> 
+						<span>Previous </span><span class="sparx-access">page</span>
+					</a>
+				</li>
+				<li>
+					<a href="#"><span class="sparx-access">page </span><span>1</span></a>
+				</li>
+				<li>
+					<a href="#" rel="prev"><span class="sparx-access">page </span><span>2</span></a>
+				</li>
+				<li>
+					<a href="#"><span class="sparx-access">page </span><span>3</span></a>
+				</li>
+				<li>
+					<a href="#" rel="next"><span class="sparx-access">page </span><span>4</span></a>
+				</li>
+				<li class="active">
+					<a href="#"><span class="sparx-access">You're currently on page </span><span>5</span></a>
+				</li>
+				<li class="sparx-disabled">
+					<a href="#">						
+						<span>Next </span><span class="sparx-access">page</span>
+						<i class="fa fa-forward fa-lg"></i> 
+					</a>
+				</li>
+			</ul>
+		</nav>
 		
 		<!-- <h1>Message Box (Google+ and Facebook)</h1> -->
 		

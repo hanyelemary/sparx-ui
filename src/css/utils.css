@@ -1,0 +1,13 @@
+/* Utility Classes */
+
+/* accessibility class */
+.sparx-access {
+	position: absolute;
+	left: -9999em;
+}
+
+/* disabled components */
+.sparx-disabled {
+	cursor: not-allowed;
+	opacity: 0.5;
+}
