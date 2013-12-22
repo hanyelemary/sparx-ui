@@ -1,0 +1,47 @@
+.sparx-table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	font-size: 0.875em;
+	box-shadow: 0 1px 1px #CFCFCF; 
+}
+
+.sparx-table thead {
+	background: #eee;
+	vertical-align: bottom;
+	text-align: left;
+	border-bottom: 1px solid #ddd;
+}
+
+.sparx-table tbody {
+	background: #fff;	
+}
+
+.sparx-table caption {
+	font-size: 1.25em;
+	font-weight: bold;
+	padding: 0.5em;
+	text-align: left;
+}
+
+.sparx-table th,
+.sparx-table td {
+	padding: 11px 9px;
+}
+
+.sparx-table-row-borders tr {
+	border-bottom: 1px solid #ddd;
+}
+
+.sparx-table-cell-borders td, 
+.sparx-table-cell-borders th {
+	border-left: 1px solid #ddd;
+}
+
+.sparx-table-borders td,
+.sparx-table-borders th {
+	border: 1px solid #ddd;
+}
+
+.sparx-table-stripes tr:nth-child(2n) td {
+	background: #f1f1f1;
+}

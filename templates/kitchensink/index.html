@@ -18,10 +18,13 @@
 	<link rel="stylesheet" href="../../src/css/button/button.css"/>
 	<link rel="stylesheet" href="../../src/css/menu/menu.css"/>
 	<link rel="stylesheet" href="../../src/css/card/card.css"/>
+	<link rel="stylesheet" href="../../src/css/table/table.css"/>
     <link rel="stylesheet" href="../../src/css/typography.css"/>
     <link rel="stylesheet" href="../../src/css/misc.css"/>		
 	<link rel="stylesheet" href="../../src/css/utils.css"/>
 
+ 	<!-- <link rel="stylesheet" href="../../target/css/sparx-ui.min.css"> -->
+ 	
 	<!-- Kitchen Sink Stylesheet -->
 	<link rel="stylesheet" href="kitchensink.css"/>
 
@@ -439,10 +442,381 @@
 					</a>
 				</li>
 			</ul>
-		</nav>
+		</nav>	
 		
-		<!-- <h1>Message Box (Google+ and Facebook)</h1> -->
-		
+		<h1>Tables</h1>
+
+		<h2>Basic Table</h2>
+		<form class="sparx-form">
+			<table class="sparx-table">
+				<caption>Employees</caption>
+				<thead>
+					<tr>
+						<th><input name="select-all" type="checkbox"/></th>
+						<th>Employee ID</th>
+						<th>Name</th>
+						<th>Email</th>
+						<th>Gender</th>
+						<th>Job title</th>
+						<th>Location</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><input type="checkbox"/></td>
+						<td>#54016888</td>
+						<td>Hany Elemary</td>	
+						<td>me@example.com</td>
+						<td>Male</td>
+						<td>Sr. Software Engineer</td>
+						<td>United States</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox"/></td>
+						<td>#54016880</td>
+						<td>Joe Fischer</td>	
+						<td>jfischer@example.com</td>
+						<td>Male</td>
+						<td>Consultanting Engineer</td>
+						<td>United States</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox"/></td>
+						<td>#54016881</td>
+						<td>Mary Welsh</td>	
+						<td>welsh@example.com</td>
+						<td>Female</td>
+						<td>Designer</td>
+						<td>United Kingdom</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox"/></td>
+						<td>#54016882</td>
+						<td>Maria Aqa</td>	
+						<td>aqam@example.com</td>
+						<td>Female</td>
+						<td>Artist</td>
+						<td>Spain</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox"/></td>
+						<td>#54016882</td>
+						<td>Benjamin Frank</td>	
+						<td>ben.frank@example.com</td>
+						<td>Male</td>
+						<td>Account Executive</td>
+						<td>Germany</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox"/></td>
+						<td>#54016882</td>
+						<td>Debbie Hunt</td>	
+						<td>debbie.hunt@example.com</td>
+						<td>Female</td>
+						<td>Project Manager</td>
+						<td>United States</td>
+					</tr>
+				</tbody>
+			</table>
+		</form>
+
+		<h2>Table - Cell Separators</h2>
+		<form class="sparx-form">
+			<table class="sparx-table sparx-table-cell-borders">
+				<caption>Employees</caption>
+				<thead>
+					<tr>
+						<th><input name="select-all" type="checkbox"/></th>
+						<th>Employee ID</th>
+						<th>Name</th>
+						<th>Email</th>
+						<th>Gender</th>
+						<th>Job title</th>
+						<th>Location</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><input type="checkbox"/></td>
+						<td>#54016888</td>
+						<td>Hany Elemary</td>	
+						<td>me@example.com</td>
+						<td>Male</td>
+						<td>Sr. Software Engineer</td>
+						<td>United States</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox"/></td>
+						<td>#54016880</td>
+						<td>Joe Fischer</td>	
+						<td>jfischer@example.com</td>
+						<td>Male</td>
+						<td>Consultanting Engineer</td>
+						<td>United States</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox"/></td>
+						<td>#54016881</td>
+						<td>Mary Welsh</td>	
+						<td>welsh@example.com</td>
+						<td>Female</td>
+						<td>Designer</td>
+						<td>United Kingdom</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox"/></td>
+						<td>#54016882</td>
+						<td>Maria Aqa</td>	
+						<td>aqam@example.com</td>
+						<td>Female</td>
+						<td>Artist</td>
+						<td>Spain</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox"/></td>
+						<td>#54016882</td>
+						<td>Benjamin Frank</td>	
+						<td>ben.frank@example.com</td>
+						<td>Male</td>
+						<td>Account Executive</td>
+						<td>Germany</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox"/></td>
+						<td>#54016882</td>
+						<td>Debbie Hunt</td>	
+						<td>debbie.hunt@example.com</td>
+						<td>Female</td>
+						<td>Project Manager</td>
+						<td>United States</td>
+					</tr>
+				</tbody>
+			</table>
+		</form>
+
+		<h2>Table - Row Separators</h2>
+		<form class="sparx-form">
+			<table class="sparx-table sparx-table-row-borders">
+				<caption>Employees</caption>
+				<thead>
+					<tr>
+						<th><input name="select-all" type="checkbox"/></th>
+						<th>Employee ID</th>
+						<th>Name</th>
+						<th>Email</th>
+						<th>Gender</th>
+						<th>Job title</th>
+						<th>Location</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><input type="checkbox"/></td>
+						<td>#54016888</td>
+						<td>Hany Elemary</td>	
+						<td>me@example.com</td>
+						<td>Male</td>
+						<td>Sr. Software Engineer</td>
+						<td>United States</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox"/></td>
+						<td>#54016880</td>
+						<td>Joe Fischer</td>	
+						<td>jfischer@example.com</td>
+						<td>Male</td>
+						<td>Consultanting Engineer</td>
+						<td>United States</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox"/></td>
+						<td>#54016881</td>
+						<td>Mary Welsh</td>	
+						<td>welsh@example.com</td>
+						<td>Female</td>
+						<td>Designer</td>
+						<td>United Kingdom</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox"/></td>
+						<td>#54016882</td>
+						<td>Maria Aqa</td>	
+						<td>aqam@example.com</td>
+						<td>Female</td>
+						<td>Artist</td>
+						<td>Spain</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox"/></td>
+						<td>#54016882</td>
+						<td>Benjamin Frank</td>	
+						<td>ben.frank@example.com</td>
+						<td>Male</td>
+						<td>Account Executive</td>
+						<td>Germany</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox"/></td>
+						<td>#54016882</td>
+						<td>Debbie Hunt</td>	
+						<td>debbie.hunt@example.com</td>
+						<td>Female</td>
+						<td>Project Manager</td>
+						<td>United States</td>
+					</tr>
+				</tbody>
+			</table>
+		</form>
+
+
+		<h2>Table - Borders</h2>
+		<form class="sparx-form">
+			<table class="sparx-table sparx-table-borders">
+				<caption>Employees</caption>
+				<thead>
+					<tr>
+						<th><input name="select-all" type="checkbox"/></th>
+						<th>Employee ID</th>
+						<th>Name</th>
+						<th>Email</th>
+						<th>Gender</th>
+						<th>Job title</th>
+						<th>Location</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><input type="checkbox"/></td>
+						<td>#54016888</td>
+						<td>Hany Elemary</td>	
+						<td>me@example.com</td>
+						<td>Male</td>
+						<td>Sr. Software Engineer</td>
+						<td>United States</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox"/></td>
+						<td>#54016880</td>
+						<td>Joe Fischer</td>	
+						<td>jfischer@example.com</td>
+						<td>Male</td>
+						<td>Consultanting Engineer</td>
+						<td>United States</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox"/></td>
+						<td>#54016881</td>
+						<td>Mary Welsh</td>	
+						<td>welsh@example.com</td>
+						<td>Female</td>
+						<td>Designer</td>
+						<td>United Kingdom</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox"/></td>
+						<td>#54016882</td>
+						<td>Maria Aqa</td>	
+						<td>aqam@example.com</td>
+						<td>Female</td>
+						<td>Artist</td>
+						<td>Spain</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox"/></td>
+						<td>#54016882</td>
+						<td>Benjamin Frank</td>	
+						<td>ben.frank@example.com</td>
+						<td>Male</td>
+						<td>Account Executive</td>
+						<td>Germany</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox"/></td>
+						<td>#54016882</td>
+						<td>Debbie Hunt</td>	
+						<td>debbie.hunt@example.com</td>
+						<td>Female</td>
+						<td>Project Manager</td>
+						<td>United States</td>
+					</tr>
+				</tbody>
+			</table>
+		</form>
+
+		<h2>Table - Stripes</h2>
+		<form class="sparx-form">
+			<table class="sparx-table sparx-table-stripes sparx-table-row-borders">
+				<caption>Employees</caption>
+				<thead>
+					<tr>
+						<th><input name="select-all" type="checkbox"/></th>
+						<th>Employee ID</th>
+						<th>Name</th>
+						<th>Email</th>
+						<th>Gender</th>
+						<th>Job title</th>
+						<th>Location</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><input type="checkbox"/></td>
+						<td>#54016888</td>
+						<td>Hany Elemary</td>	
+						<td>me@example.com</td>
+						<td>Male</td>
+						<td>Sr. Software Engineer</td>
+						<td>United States</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox"/></td>
+						<td>#54016880</td>
+						<td>Joe Fischer</td>	
+						<td>jfischer@example.com</td>
+						<td>Male</td>
+						<td>Consultanting Engineer</td>
+						<td>United States</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox"/></td>
+						<td>#54016881</td>
+						<td>Mary Welsh</td>	
+						<td>welsh@example.com</td>
+						<td>Female</td>
+						<td>Designer</td>
+						<td>United Kingdom</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox"/></td>
+						<td>#54016882</td>
+						<td>Maria Aqa</td>	
+						<td>aqam@example.com</td>
+						<td>Female</td>
+						<td>Artist</td>
+						<td>Spain</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox"/></td>
+						<td>#54016882</td>
+						<td>Benjamin Frank</td>	
+						<td>ben.frank@example.com</td>
+						<td>Male</td>
+						<td>Account Executive</td>
+						<td>Germany</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox"/></td>
+						<td>#54016882</td>
+						<td>Debbie Hunt</td>	
+						<td>debbie.hunt@example.com</td>
+						<td>Female</td>
+						<td>Project Manager</td>
+						<td>United States</td>
+					</tr>
+				</tbody>
+			</table>
+		</form>
+
 		<h1 id="typography">h1.Typography</h1>
 		<h2>h2.Heading</h2>
 		<h3>h3.Heading</h3>
