@@ -32,6 +32,17 @@ module.exports = function(grunt) {
       }
     },
 
+    imagemin: {
+      dynamic: {
+        files: [{
+          expand: true,
+          cwd: 'assets/images',
+          src: ['**/*.{png,jpg,gif}'],
+          dest: 'assets/images'
+        }]
+      }
+    },
+
     //remove the target directory
     clean: ['target']
   });
@@ -48,11 +59,15 @@ module.exports = function(grunt) {
   // run using command: grunt cssmin
   grunt.loadNpmTasks('grunt-contrib-cssmin');
 
+  // run using command: grunt imagemin
+  grunt.loadNpmTasks('grunt-contrib-imagemin');
+
   // Default task(s) to run in order when executing: grunt.
   grunt.registerTask('default', [
     'clean',    
     'concat',
     'csslint',    
-    'cssmin'
+    'cssmin',
+    'imagemin'
   ]);
 };
