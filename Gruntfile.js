@@ -32,6 +32,7 @@ module.exports = function(grunt) {
       }
     },
 
+    //optimize images for better performance
     imagemin: {
       dynamic: {
         files: [{
