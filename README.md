@@ -1,5 +1,5 @@
-Sparx UI
-========
+[SparxUI](http://sparxui.com/)
+==========
 
 A light-weight UI framework for creating responsive, future-friendly and accessible web apps. Use it for rapid prototyping or production-grade applications. http://sparxui.com
 
@@ -17,6 +17,37 @@ The framework will NOT grow beyond 10 kb minified + gzipped.
 ### Technical Excellence:
 Built on top of SMACSS principles. 
 Content-first and progressive enhancement drive our work. 
+
+## Local Project Setup
+We use [Grunt](http://gruntjs.com/) to build the project. Grunt and Grunt plugins are installed and managed via npm, the [Node.js](http://nodejs.org/) package manager.
+
+If you haven't already, install nodejs and then open your terminal. Install grunt command line interface as a global package. You might need prefix this command with ```sudo``` depending on your permissions:
+
+```
+npm install -g grunt-cli
+```
+
+Make sure you have grunt installed by testing:
+
+```
+grunt -v
+```
+
+In order to install all the dependency that SparxUI uses, run this command:
+
+```
+npm install
+```
+
+To check out the available tasks that SparxUI uses, run the help command from the sparx-ui directory:
+
+```
+grunt -help
+```
+
+Now you can run ```grunt``` to run all of the default tasks for SparxUI under the sparx-ui directory.
+
+You should be all set now. Ready to contribute? Great, check out our coding standards and our [contributing](CONTRIBUTING.md) guide.
 
 ## Browser Support:
 
