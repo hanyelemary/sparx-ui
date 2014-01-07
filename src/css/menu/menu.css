@@ -21,6 +21,7 @@
 	padding: 1em;
 	color: #444;
 	background: #EEE;
+	text-decoration: none;
 }
 
 .sparx-menu > li > a:hover,
