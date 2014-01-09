@@ -25,6 +25,8 @@ npm install
 grunt
 ```
 
+Open up the kitchensink template in your browser to see the available widgets. It should be listed under the directory /templates/kitchensink/index.html
+
 ## Contributing
 Have you checked out our current issues? If not, we recommend you do so.
 
