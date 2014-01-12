@@ -5,11 +5,16 @@ module.exports = function(grunt) {
   // Project configuration.
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
+    bower: grunt.file.readJSON('bower.json'),
     
     //file concatenation configuration
     concat: {
       css: {
-        src: ['src/css/*.css', 'src/css/*/*.css'],
+        src: [
+          'bower_components/normalize-css/normalize.css',
+          'src/css/*.css', 
+          'src/css/*/*.css'
+        ],
         dest: 'target/css/<%= pkg.name %>.css'
       }
     },
@@ -64,8 +69,8 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-imagemin');
 
   // Default task(s) to run in order when executing: grunt.
-  grunt.registerTask('default', [
-    'clean',    
+  grunt.registerTask('default', [    
+    'clean',
     'concat',
     'csslint',    
     'cssmin',

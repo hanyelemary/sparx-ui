@@ -3,6 +3,7 @@
   "description": "Tiny, User Interface library for building beautiful web apps.",
   "version": "0.1.0",
   "devDependencies": {
+    "bower": "~1.2.5",
     "grunt": "~0.4.1",
     "grunt-contrib-cssmin": "~0.6.0",    
     "grunt-contrib-imagemin": "~0.4.0",

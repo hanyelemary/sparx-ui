@@ -1,0 +1,28 @@
+{
+  "name": "sparx-ui",
+  "version": "0.0.1",
+  "homepage": "https://github.com/hanyelemary/sparx-ui",
+  "authors": [
+    "Hany Elemary <hany.elemary@gmail.com>"
+  ],
+  "description": "A light-weight, experimental UI framework for creating future-friendly and accessible web apps. Use it for rapid prototyping",
+  "keywords": [
+    "css",
+    "framework",
+    "accessible",
+    "widgets",
+    "lightweight"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "normalize-css": "2.1.3"
+  }
+}
