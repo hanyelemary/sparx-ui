@@ -69,10 +69,10 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-imagemin');
 
   // Default task(s) to run in order when executing: grunt.
-  grunt.registerTask('default', [    
+  grunt.registerTask('default', [
     'clean',
     'concat',
-    'csslint',    
+    'csslint',
     'cssmin',
     'imagemin'
   ]);
