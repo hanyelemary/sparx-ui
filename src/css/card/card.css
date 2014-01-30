@@ -4,9 +4,9 @@
     box-shadow: 0 1px 1px #CFCFCF;        
     margin-bottom: 20px;
     position: relative;
+    display: inline-block;
+    width: 100%;
 }
-
-/* img-crop */
 
 .sparx-card-media,
 .sparx-card-media img {
