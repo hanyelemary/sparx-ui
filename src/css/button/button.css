@@ -1,5 +1,4 @@
 .sparx-button {
-    height: 40px;
     display: inline-block;
     zoom: 1;
     white-space: nowrap;
@@ -7,7 +6,7 @@
     vertical-align: top;
     text-align: center;
     font-size: 0.75em;  
-    padding: 1em;
+    padding: 1.1em;
     color: #444;
     border: none;
     border-radius: 0;
@@ -72,7 +71,7 @@
 }
 
 .sparx-button-group .sparx-button {
-    padding: 0 1.5em 0 1.5em;
+    padding: 1em 1.5em;
 }
 
 .sparx-button-group .sparx-button:not(:first-child) {

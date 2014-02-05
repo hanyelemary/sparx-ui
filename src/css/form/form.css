@@ -14,8 +14,7 @@
 .sparx-form input[type="color"],
 .sparx-form select,
 .sparx-form textarea {
-    height: 40px;
-    padding: 0.22em;
+    padding: .70em 0.35em;
     font-weight: 200;
     vertical-align: middle;
     display: inline-block;
